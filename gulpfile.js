@@ -72,6 +72,8 @@ gulp.task('minify:css', function() {
     .pipe(cleanCss())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(paths.dist.base + '/css'))
+    .pipe(gulp.dest(paths.src.css))
+
 });
 
 // Minify JS
