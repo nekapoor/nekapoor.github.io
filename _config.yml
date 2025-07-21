@@ -1,6 +1,6 @@
 title: "Neeraj’s Blog"
 author: "Neeraj"
-url: "https://YOURUSER.github.io"   # custom domain later? change here
+url: "https://neerajkapoor.com"   # custom domain later? change here
 baseurl: ""                         # leave empty when deploying at repo root
 
 theme: pandoc-markdown-jekyll-theme
