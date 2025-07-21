@@ -1,0 +1,22 @@
+title: "Neeraj’s Blog"
+author: "Neeraj"
+url: "https://YOURUSER.github.io"   # custom domain later? change here
+baseurl: ""                         # leave empty when deploying at repo root
+
+theme: pandoc-markdown-jekyll-theme
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-pandoc                  # lets Jekyll call Pandoc
+
+markdown: Pandoc
+pandoc:
+  extensions:
+    - from: 'markdown+smart+tex_math_single_backslash'
+    - filter: 'pandoc-sidenote'
+    - template: '_template'
+    - katex                         # KaTeX for math
+    - toc                           # auto table-of-contents
+    - M: 'site__baseurl=/'          # duplicate of baseurl per theme docs
+permalink: /:year/:month/:day/:title/
