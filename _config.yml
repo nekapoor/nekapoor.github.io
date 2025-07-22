@@ -1,15 +1,13 @@
-title: "Neeraj’s Blog"
+title: "Neeraj's Blog"
 author: "Neeraj"
-domain: neerajkapoor.com      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://neerajkapoor.com  #
-baseurl: ""                         # leave empty when deploying at repo root
-
-theme: pandoc-markdown-jekyll-theme
+domain: neerajkapoor.com
+url: https://neerajkapoor.com
+baseurl: ""
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-pandoc                  # lets Jekyll call Pandoc
+  - jekyll-pandoc
 
 markdown: Pandoc
 pandoc:
@@ -17,7 +15,7 @@ pandoc:
     - from: 'markdown+smart+tex_math_single_backslash'
     - filter: 'pandoc-sidenote'
     - template: '_template'
-    - katex                         # KaTeX for math
-    - toc                           # auto table-of-contents
-    - M: 'site__baseurl=/'          # duplicate of baseurl per theme docs
+    - katex
+    - toc
+    - M: 'site__baseurl=/'
 permalink: /:year/:month/:day/:title/
