@@ -1,6 +1,7 @@
 title: "Neeraj’s Blog"
 author: "Neeraj"
-url: "https://neerajkapoor.com"   # custom domain later? change here
+domain: neerajkapoor.com      # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://nekapoor.github.io  #
 baseurl: ""                         # leave empty when deploying at repo root
 
 theme: pandoc-markdown-jekyll-theme
