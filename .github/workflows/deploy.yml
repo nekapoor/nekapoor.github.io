@@ -1,0 +1,93 @@
+name: Deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Cache pandoc-sidenote
+        id: cache-pandoc-sidenote
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/bin/pandoc-sidenote
+          key: pandoc-sidenote-${{ runner.os }}-0.23.0
+
+      - name: Install pandoc-sidenote
+        if: steps.cache-pandoc-sidenote.outputs.cache-hit != 'true'
+        run: |
+          # Build from source with caching (Stack is pre-installed on GitHub runners)
+          git clone https://github.com/jez/pandoc-sidenote.git /tmp/pandoc-sidenote
+          cd /tmp/pandoc-sidenote
+          stack build
+          mkdir -p ~/.local/bin
+          stack install --local-bin-path ~/.local/bin
+
+      - name: Add pandoc-sidenote to PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
+      - name: Build with Jekyll
+        run: |
+          bundle exec jekyll build --baseurl "/blog"
+        env:
+          JEKYLL_ENV: production
+
+      - name: Copy all assets to blog directory
+        run: |
+          # Create the blog/assets directory if it doesn't exist
+          mkdir -p _site/blog/assets
+          
+          # Copy all assets recursively while preserving directory structure
+          cp -r _site/assets/* _site/blog/assets/
+          
+      - name: Print output directory structure
+        run: |
+          echo "Generated _site directory structure:"
+          find _site -type f | sort
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
