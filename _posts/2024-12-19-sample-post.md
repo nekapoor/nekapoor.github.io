@@ -5,7 +5,7 @@ date: 2024-12-19
 categories: test
 ---
 
-This is a sample post to test if GitHub Pages is working correctly with the pandoc theme.
+This is a sample post to test if GitHub Pages is working correctly with the pandoc theme. 
 
 ## Testing Features
 
