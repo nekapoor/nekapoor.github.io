@@ -58,17 +58,9 @@ jobs:
 
       - name: Build with Jekyll
         run: |
-          bundle exec jekyll build --baseurl "/blog"
+          bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-
-      - name: Copy all assets to blog directory
-        run: |
-          # Create the blog/assets directory if it doesn't exist
-          mkdir -p _site/blog/assets
-          
-          # Copy all assets recursively while preserving directory structure
-          cp -r _site/assets/* _site/blog/assets/
           
       - name: Print output directory structure
         run: |
