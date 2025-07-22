@@ -74,7 +74,7 @@ I had previously obsessed over protein and ignored fiber; this flip made the dif
 
 ### Why psyllium?
 
-Psyllium husk is mostly **soluble** fiber, which forms a gel in the gut and
+Psyllium husk is **soluble** fiber, which forms a gel in the gut and
 helps pull LDL out of circulation.
 
 ---
