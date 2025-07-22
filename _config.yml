@@ -2,10 +2,8 @@ title: "Neeraj's Blog"
 author: "Neeraj"
 domain: neerajkapoor.com
 url: https://neerajkapoor.com
-baseurl: ""
 
 theme: pandoc-markdown-jekyll-theme
-remote_theme: jez/pandoc-markdown-jekyll-theme
 
 plugins:
   - jekyll-feed
