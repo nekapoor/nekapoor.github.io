@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-21T17:38:57-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Neeraj’s Blog</title><author><name>Neeraj</name></author><entry><title type="html">How I Brought My LDL (“Bad”) Cholesterol Down 70 Points in 3 Months</title><link href="http://localhost:4000/2024/01/06/ldl-down-70-points/" rel="alternate" type="text/html" title="How I Brought My LDL (“Bad”) Cholesterol Down 70 Points in 3 Months" /><published>2024-01-06T00:00:00-08:00</published><updated>2024-01-06T00:00:00-08:00</updated><id>http://localhost:4000/2024/01/06/ldl-down-70-points</id><content type="html" xml:base="http://localhost:4000/2024/01/06/ldl-down-70-points/"><![CDATA[<nav id="TOC" role="doc-toc">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-21T17:42:43-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Neeraj’s Blog</title><author><name>Neeraj</name></author><entry><title type="html">Sample Post to Test GitHub Pages</title><link href="http://localhost:4000/2024/12/19/sample-post/" rel="alternate" type="text/html" title="Sample Post to Test GitHub Pages" /><published>2024-12-19T00:00:00-08:00</published><updated>2024-12-19T00:00:00-08:00</updated><id>http://localhost:4000/2024/12/19/sample-post</id><content type="html" xml:base="http://localhost:4000/2024/12/19/sample-post/"><![CDATA[<nav id="TOC" role="doc-toc">
+  <a href="/">Home</a><br>
+  <strong>Contents</strong><label for="contents">⊕</label>
+  <input type="checkbox" id="contents">
+  <ul>
+  <li><a href="#testing-features" id="toc-testing-features">Testing
+  Features</a>
+  <ul>
+  <li><a href="#code-block" id="toc-code-block">Code Block</a></li>
+  <li><a href="#math-if-enabled" id="toc-math-if-enabled">Math (if
+  enabled)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+
+<main>
+<p>This is a sample post to test if GitHub Pages is working correctly
+with the pandoc theme.</p>
+<h2 id="testing-features">Testing Features</h2>
+<ul>
+<li><strong>Bold text</strong></li>
+<li><em>Italic text</em></li>
+<li><code>Code snippets</code></li>
+</ul>
+<h3 id="code-block">Code Block</h3>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> hello_world():</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Hello from GitHub Pages!&quot;</span>)</span></code></pre></div>
+<h3 id="math-if-enabled">Math (if enabled)</h3>
+<p>The quadratic formula: <span class="math inline">x = \frac{-b \pm
+\sqrt{b^2-4ac}}{2a}</span></p>
+<hr />
+<p>If you can see this post with proper styling, the theme is
+working!</p>
+</main>]]></content><author><name>Neeraj</name></author><category term="test" /><summary type="html"><![CDATA[← Return home This is a sample post to test if GitHub Pages is working correctly with the pandoc theme.]]></summary></entry><entry><title type="html">How I Brought My LDL (“Bad”) Cholesterol Down 70 Points in 3 Months</title><link href="http://localhost:4000/2024/01/06/ldl-down-70-points/" rel="alternate" type="text/html" title="How I Brought My LDL (“Bad”) Cholesterol Down 70 Points in 3 Months" /><published>2024-01-06T00:00:00-08:00</published><updated>2024-01-06T00:00:00-08:00</updated><id>http://localhost:4000/2024/01/06/ldl-down-70-points</id><content type="html" xml:base="http://localhost:4000/2024/01/06/ldl-down-70-points/"><![CDATA[<nav id="TOC" role="doc-toc">
   <a href="/">Home</a><br>
   <strong>Contents</strong><label for="contents">⊕</label>
   <input type="checkbox" id="contents">
