@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Evolution of the Perfect Smoothie"
-date: 2025-01-28
+date: 2025-07-28
 math: false
 categories: health
 ---
