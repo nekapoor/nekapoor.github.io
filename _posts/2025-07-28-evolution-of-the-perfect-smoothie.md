@@ -11,7 +11,7 @@ The perfect smoothie should have a lot of fiber and a lot of protein. I've been 
 
 ## Smoothie #1
 
-Late 2023, my cholesterol got really high and so I worked to lower it. In [this article](/ldl-down-70-points/) I describe the smoothie I used to lower my cholesterol. For completeness, here it is again:
+Late 2023, my cholesterol got really high and so I worked to lower it. In [this article](/2024/01/06/ldl-down-70-points/) I describe the smoothie I used to lower my cholesterol. For completeness, here it is again:
 
 * 8 oz unsweetened soy milk  
 * 30 g Gold Standard whey  
